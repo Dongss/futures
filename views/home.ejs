@@ -2,10 +2,11 @@
 <div class="jumbotron margin-bottom-0">
   <div class="container">
     <div class="float-left">
-      <h1>期货系统</h1>
+      <h1>****期货</h1>
       <p>-------您身边的的期货专家</p>
     </div>
 
+    <% if(userName === false) { %>
     <div class="float-right width-330px">
     <form class="form-horizontal">
       <div class="form-group">
@@ -26,8 +27,9 @@
         </div>
       </div>
     </form>
-      </div>
+    </div>
   </div>
+  <% } %>
 </div>
 
 <div class="panel panel-default">
@@ -38,8 +40,8 @@
           主页
         </a>
       </li>
-      <li><a href="#ios" data-toggle="tab">期货新闻</a></li>
-      <li><a href="#ios" data-toggle="tab">实时行情</a></li>
+      <li><a href="#news" data-toggle="tab">期货新闻</a></li>
+      <li><a href="#data" data-toggle="tab">实时行情</a></li>
     </ul>
 
     <div id="myTabContent" class="tab-content">
@@ -50,9 +52,12 @@
           买卖期货的场所叫做期货市场。
           投资者可以对期货进行投资或投机。大部分人认为对期货的不恰当投机行为，例如无货沽空，可以导致金融市场的动荡，这是不正确的看法，可以同时做空做多，才是健康正常的交易市场。</p>
       </div>
-      <div class="tab-pane fade" id="ios">
+      <div class="tab-pane fade" id="news">
         <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
           TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+      </div>
+      <div class="tab-pane fade" id="data">
+        <p>data。</p>
       </div>
 
     </div>
